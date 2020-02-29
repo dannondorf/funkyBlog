@@ -1,0 +1,46 @@
+main > section > table {
+    border: 6px solid var(--tableBorderColor);
+    background-color: var(--tableBackgroundColor);
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main > section > table td,
+main > section > table th {
+    border: 1px solid var(--tableBorderColor);
+    padding: 4px 4px;
+}
+
+main > section > table tbody td {
+    font-size: var(--tableBodyFontSize);
+}
+
+main > section > table thead {
+    background-color: var(--tableHeaderBackgroundColor);
+    background-image: var(--tableLinearGradient);
+}
+
+main > section > table thead th {
+    font-size: var(--tableHeaderFontSize);
+    font-weight: bold;
+    color: var(--tableFontColor);
+    text-align: left;
+    border-left: 2px solid var(--tableBorderColor);
+}
+
+main > section > table thead th:first-child {
+    border-left: none;
+}
+
+main > section > table tfoot {
+    font-size: var(--tableFooterFontSize);
+    font-weight: bold;
+    color: var(--tableFontColor);
+    background-color: var(--tableFooterBackgroundColor);
+    background-image: var(--tableLinearGradient);
+}
+
+main > section > table tfoot td {
+    font-size: var(--tableFooterFontSize);
+}

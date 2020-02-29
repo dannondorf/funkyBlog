@@ -1,0 +1,13 @@
+:root {
+    --tableFontColor: #F0F0F0;
+    --tableBackgroundColor: #FFE3C6;
+    --tableBorderColor: #948473;
+    --tableHeaderBackgroundColor: var(--tableBorderColor);
+    --tableFooterBackgroundColor: var(--tableBorderColor);
+    --tableHeaderFontSize: 17px;
+    --tableBodyFontSize: 13px;
+    --tableFooterFontSize: 16px;
+    --tableLinearGradient: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+    --tableLinearGradientInverted: linear-gradient(to bottom, #948473 0%, #9e9081 66%, #afa396 100%);
+    --mainLinearGradient: linear-gradient(to bottom right, beige, tan, rgb(215, 186, 186));
+}

@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 40px calc(100vh - 20px - 40px) 20px;
+    grid-template-areas: "headerSpan headerNav""leftPanel content""footer footer";
+    justify-items: stretch;
+}
+
+body>span {
+    grid-area: headerSpan;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+body>nav {
+    grid-area: headerNav;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body>nav>button {
+    margin: 10px;
+}
+
+body aside:first-of-type {
+    grid-area: leftPanel;
+    display: flex;
+    place-content: center center;
+}
+
+body aside:first-of-type nav {
+    width: 70%;
+}
+
+body aside:first-of-type nav li {
+    padding: 10px;
+}
+
+main {
+    grid-area: content;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section {
+    margin: 15px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+main > section:first-of-type {
+    display: block;
+}
+form   {
+    flex: 5;
+    align-content: center;
+    border: 1px solid var(--tableBorderColor);
+    text-align: center;
+}
+form div {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: auto;
+    grid-gap: 4px;
+    align-items: center;
+
+}
+form div label {
+    text-align: right;
+}

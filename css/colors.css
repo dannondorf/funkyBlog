@@ -1,0 +1,66 @@
+*:focus {
+    outline: none;
+}
+
+header,
+body > span,
+body > nav {
+    background-color: aliceblue;
+    background: var(--tableLinearGradient);
+}
+
+main section:nth-of-type(2) button {
+    cursor: pointer;
+    margin: 10px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: var(--tableBorderColor);
+    box-shadow: 4px 4px 4px var(--tableBorderColor);
+    font-size: 20px;
+    color: var(--tableFontColor);
+    background-color: var(--tableBackgroundColor);
+    background-image: var(--tableLinearGradient)
+}
+main section:nth-of-type(2) button:hover {
+    background-image: var(--tableLinearGradientInverted);
+}
+main section:nth-of-type(2) button:active {
+    background-image: var(--tableLinearGradientInverted);
+}
+
+body aside:nth-of-type(1) {
+    background: var(--tableLinearGradient);
+    color: var(--tableFontColor);
+    background-color: aliceblue;
+}
+
+body aside:nth-of-type(1) > nav {
+    list-style: none;
+}
+
+body aside:nth-of-type(1)>nav>li {
+    cursor: pointer;
+}
+
+body aside:nth-of-type(1)>nav>li:hover {
+    background-color: var(--tableBorderColor);
+    color: black;
+}
+
+body aside:nth-of-type(1)>nav>li:active {
+    background-color: #9e9081;
+    color: black;
+}
+
+main {
+    background-image: var(--mainLinearGradient);
+    background-color: aliceblue;
+}
+
+
+footer {
+    color: aliceblue;
+    background-image: linear-gradient(to bottom right, midnightblue, black);
+    background-color: aliceblue;
+}
